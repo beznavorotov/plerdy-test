@@ -29,14 +29,17 @@
 }
 
 .btn_blue {
+    min-width: 149px;
+    height: 41px;
+}
+
+.btns {
     background-color: #5D78FF;
     color: white;
     font-weight: 400;
     font-size: 18px;
     border-radius: 8px;
     padding: 6px 24px;
-    min-width: 149px;
-    height: 41px;
     border: none;
     cursor: pointer;
 }
@@ -81,21 +84,19 @@ main {
 
 }
 
-.btn_blue_content {
-    background: #5d78ff;
-    border-radius: 8px;
+.btn_content {
+
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
-    padding: 8px 24px;
     height: 40px;
-    border: none;
-    font-weight: 400;
-    font-size: 14px;
     margin: 16px auto;
-    cursor: pointer;
-    max-width: 180px;
+    min-width: 185px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 0em;
+    color: #fff;
 }
 
 
@@ -181,8 +182,6 @@ main {
     top: 81%;
     left: 7%;
     width: 35%;
-    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.12);
-    background: rgba(241, 247, 255, 0.9);
     transform: rotate(-7deg);
 }
 
@@ -191,10 +190,7 @@ main {
     top: -8%;
     left: 11%;
     width: 35%;
-    box-shadow: 0 2px 11px 0 rgba(0, 0, 0, 0.08);
-    background: rgba(241, 247, 255, 0.9);
     transform: rotate(2deg);
-
     border-radius: 6px;
     width: 117px;
     height: 93px;
@@ -231,12 +227,13 @@ main {
 .text_title_slider_span {
     color: #001e41;
 }
-.box-card{
 
-
+.box-card {
+    display: flex;
 }
+
 .slider_card {
-    width: 302px;
+    width: 340px;
     height: 372px;
     border: 1px solid #ddd;
     padding: 20px;
@@ -246,7 +243,7 @@ main {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
     position: relative;
     overflow: hidden;
 }
@@ -264,15 +261,16 @@ main {
     left: 60%;
 
 }
-.text_rolle{
+
+.text_rolle {
     font-weight: 900;
-font-size: 48px;
-line-height: 130%;
-text-align: center;
-color: #fff;
-position: absolute;
-top: 12%;
-left: 25%;
+    font-size: 48px;
+    line-height: 130%;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 12%;
+    left: 25%;
 }
 
 .card_title {
@@ -309,6 +307,99 @@ left: 25%;
     max-height: 100%;
 }
 
+.data {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.btn_boost {
+    width: 260px;
+    height: 40px;
+}
+
+
+.text_end {
+    font-weight: 400;
+
+    line-height: 130%;
+    letter-spacing: 0em;
+    color: #001e41;
+
+    font-size: 12px;
+    text-align: center;
+
+}
+
+/* modal */
+
+.title_modal {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #001e41;
+}
+
+.text_modal {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #001e41;
+}
+
+.label_text {
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 130%;
+    letter-spacing: 0em;
+    color: #909090;
+}
+
+.icon_mod {
+    width: 20px;
+    height: 15px;
+}
+
+input.form-control {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0em;
+    color: #bdbdbd;
+}
+
+.text_check {
+    font-weight: 400;
+    font-size: 9px;
+    color: #909090;
+}
+
+
+.text_by {
+    font-weight: 400;
+    font-size: 9px;
+    color: #bdbdbd;
+}
+
+.text_by_site {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 768px) {
 
@@ -318,7 +409,8 @@ left: 25%;
         grid-template-columns: 1.3fr 1fr;
         grid-gap: 15px;
         align-items: center;
-        padding: 30px 15px;
+        padding-left: 50px;
+
     }
 
     .text_title {
@@ -340,9 +432,9 @@ left: 25%;
         letter-spacing: .0025em;
     }
 
-    .btn_blue_content {
+    .btn_content {
         margin: 16px 0 40px;
-        max-width: 185px;
+        min-width: 185px;
         font-size: 15px;
     }
 
@@ -369,38 +461,78 @@ left: 25%;
         width: 152px;
         height: 77px;
         top: 260px;
-        left: -5px;
+        left: -25px;
         box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.08);
         background: #fff;
         transform: rotate(-7deg);
     }
 
-    .diag_bg_1 {
-        border-radius: 6px;
-        width: 164px;
-        height: 89px;
-        top: 260px;
-        left: -5px;
-        box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.12);
-        background: rgba(241, 247, 255, 0.9);
-        transform: rotate(-7deg);
-    }
+
 
     .diagram_two {
         border-radius: 9px;
         width: 190px;
         height: 150px;
-        top: -4%;
+        top: -3%;
         left: 5%;
         box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.08);
-
+        transform: rotate(-7deg);
     }
 
+    
+
     .diagram_three {
-        width: 164px;
-        height: 89px;
+        border-radius: 2px;
+        width: 155px;
+        height: 80px;
         top: 5%;
         left: 62%;
+        transform: rotate(13deg);
+        box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.08);
+    }
+
+
+
+
+    .slider_card {
+        width: 302px;
+        height: 372px;
+        border: 1px solid #ddd;
+        padding: 20px;
+    }
+
+    .data {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text_end {
+        max-width: 440px;
+        width: 100%;
+        margin: 0;
+        font-size: 14px;
+    }
+
+
+
+
+    .label_text {
+        font-size: 14px;
+    }
+
+
+    input.form-control {
+        font-size: 16px;
+    }
+
+    .text_check {
+        font-size: 12px;
+    }
+
+
+    .text_by {
+        font-size: 12px;
     }
 
 

@@ -52,7 +52,14 @@
             </div>
             <div class="d-flex justify-content-center">
               <button type="button" class="me-4 btn_sign">Sign In</button>
-              <button type="button" class="btn_blue">Contact sales</button>
+              <button
+                type="button"
+                class="btns btn_blue"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Contact sales
+              </button>
             </div>
           </div>
         </div>
@@ -80,7 +87,12 @@
                 navigation, and conversion path that can eventually affect its
                 micro and macro conversion rates.
               </p>
-              <button type="button" class="btn_blue_content">
+              <button
+                type="button"
+                class="btns btn_content"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
                 Run the Plerdy tool
               </button>
               <p class="text_title_content_s">
@@ -121,10 +133,10 @@
               <img
                 src="./img/diagram_1.png"
                 alt=""
-                class="diagram_one diag_bg_1"
+                class="diagram_one"
               />
               <img src="./img/diagram_2.png" alt="" class="diagram_two" />
-              <img src="./img/diagram_3.png" alt="" class="diagram_three" />
+              <img src="./img/diagram_3.png" alt="" class="diagram_three " />
             </div>
           </div>
         </div>
@@ -143,7 +155,7 @@
             <div class="d-flex justify-content-center align-items-center">
               <div class="button_next">
                 <img
-                  src="./img/Vector.svg"
+                  src="./img/vector.svg"
                   alt="Next"
                   class="vector"
                   aria-label="Next"
@@ -151,7 +163,7 @@
               </div>
               <div class="button_prev">
                 <img
-                  src="./img/Vector-right.svg"
+                  src="./img/vector-right.svg"
                   alt="Previous"
                   class="vector"
                   aria-label="Previous"
@@ -247,11 +259,16 @@
               </div>
             </div>
           </div>
-          <div>
-            <button type="button" class="btn_blue_content">
+          <div class="mt-4 mb-5 data">
+            <button
+              type="button"
+              class="btns btn_boost"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
               Boost my website conversion
             </button>
-            <p>
+            <p class="text_end ms-3">
               So, it’s high time for you to stop losing 99% of potential clients
               due to being unaware of your website users’ behavior patterns and
               needs.
@@ -259,12 +276,84 @@
           </div>
         </div>
       </section>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h2 class="title_modal">How to do a Website Audit to Improve SEO & Conversions</h2>
+              <p class="text_modal">You will get an SMS with a link to the webinar</p>
+              <form class="row g-3 needs-validation" novalidate>
+                <div class="col">
+                  <label for="validationCustom01" class="form-label label_text">Name</label>
+                  <input type="text" class="form-control text_value" placeholder="Boris Johnson" id="validationCustom01" required />
+                  <div class="invalid-feedback">
+                    Будь ласка введіть ім'я
+                  </div>
+                </div>
+                <div class="cpi-input">
+                  <label for="validationCustom01" class="form-label label_text">Lable</label>
+                  <div class="input-group mb-3 border rounded">
+                    
+                    <button class="btn btn-light dropdown-toggle d-flex align-items-center cpi-drop text_value" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" >
+                      <img src="./img/ua.png" alt="Україна" class="icon_mod">
+                      <span class="me-1">+380</span>
+                    </button>
+                    <div class="dropdown-menu w-100">
+                      <button type="button" class="dropdown-item" data-cpi-icon='<img src="./img/ua.png" alt="Україна" class="icon_mod">' data-cpi-ext="+380"
+                              data-cpi-min-length="10" data-cpi-max-length="10">
+                        <img src="./img/ua.png" alt="Україна" class="icon_mod"> (+380)
+                      </button>
+                      <button type="button" class="dropdown-item" data-cpi-icon='<img src="./img/ge.png" alt="Німеччина" class="icon_mod">' data-cpi-ext="+49"
+                              data-cpi-min-length="8" data-cpi-max-length="9">
+                        <img src="./img/ge.png" alt="Німеччина" class="icon_mod"> (+49)
+                      </button>
+                      <button type="button" class="dropdown-item" data-cpi-icon='<img src="./img/pl.png" alt="Польща" class="icon_mod">' data-cpi-ext="+48"
+                              data-cpi-min-length="8" data-cpi-max-length="9">
+                        <img src="./img/pl.png" alt="Польща" class="icon_mod"> (+48)
+                      </button>
+                    </div>
+                    <input type="text" class="form-control border-0 phone-input flex-shrink-1" style="outline: none;"
+                           pattern="[0-9]+" required minlength="10" maxlength="10" title="Enter valid mobile number" placeholder="XX XX XXX">
+                    <div class="invalid-feedback">
+                      Будь ласка введіть номер
+                    </div>
+                  </div>
+                  <input type="hidden" class="country-code-input">
+                </div>
+                <div class="form-check ms-3">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required />
+                  <label class="form-check-label text_check" for="flexCheckDefault">
+                    By signing up, you agree to our <a href="https://www.plerdy.com/ua/terms-of-service/">Conditions</a> and <a href="https://www.plerdy.com/ua/privacy-policy/">Privacy Policy</a>
+                  </label>
+                  <div class="invalid-feedback">
+                    You must agree before submitting.
+                  </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                  <button type="submit" class="btns btn-secondary">Support</button>
+                  <button type="submit" class="btns btn-primary">Contact sales</button>
+                </div>
+              </form>
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="./img/mini.png" alt="" />
+                <p class="text_by">Powered by <a href="http://www.plerdy.com" class="text_by_site">Plerdy</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-    <script src="./js/slider.js"></script>
+    <script src="./js/skripts.js"></script>
   </body>
 </html>
