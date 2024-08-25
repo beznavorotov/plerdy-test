@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
 .header_nav {
     height: 77px;
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
@@ -9,7 +8,6 @@
 
 .navbar-toggler {
     border: 0 !important;
-
 }
 
 .nav-text {
@@ -43,9 +41,11 @@
     border: none;
     cursor: pointer;
 }
-body{
+
+body {
     font-family: "Roboto", sans-serif;
 }
+
 main {
     padding-top: 77px;
 }
@@ -69,7 +69,6 @@ main {
 .text_title_content,
 .text_title_content_p {
     color: #001e41;
-
     font-weight: 400;
     font-size: 18px;
     line-height: 29px;
@@ -81,11 +80,9 @@ main {
     font-size: 14px;
     line-height: 23px;
     margin-bottom: 10px;
-
 }
 
 .btn_content {
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,16 +96,12 @@ main {
     color: #fff;
 }
 
-
-
-
 .block_icons {
     margin-bottom: 30px;
     display: grid;
     align-items: center;
     justify-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-
 }
 
 .block_icons_item {
@@ -119,13 +112,10 @@ main {
     align-items: center;
 }
 
-
-
 .col_1 {
     display: grid;
     grid-column-start: 1;
     grid-column-end: 3;
-
 }
 
 .col_2 {
@@ -150,13 +140,12 @@ main {
     display: grid;
     grid-column-start: 4;
     grid-column-end: 7;
-    }
+}
 
 .block_img {
     position: relative;
     padding: 0px;
-    
-    }
+}
 
 .img {
     display: block;
@@ -166,12 +155,13 @@ main {
     height: 275px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
+
 .diagram {
-    opacity: 0; 
+    opacity: 0;
     transition: opacity 1s ease-in-out;
     box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.12);
-background: rgba(241, 247, 255, 0.9); 
-  }
+    background: rgba(241, 247, 255, 0.9);
+}
 
 .diagram_one {
     position: absolute;
@@ -206,10 +196,9 @@ background: rgba(241, 247, 255, 0.9);
 
 @keyframes fadeIn {
     to {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-
+}
 
 /* <!-- slider --> */
 
@@ -233,7 +222,6 @@ background: rgba(241, 247, 255, 0.9);
 
 .block_arrow {
     display: none;
-
 }
 
 .box-card {
@@ -267,7 +255,6 @@ background: rgba(241, 247, 255, 0.9);
     position: absolute;
     top: 70%;
     left: 60%;
-
 }
 
 .text_rolle {
@@ -293,9 +280,7 @@ background: rgba(241, 247, 255, 0.9);
     font-weight: 400;
     font-size: 14px;
     color: #001e41;
-
 }
-
 
 .button_prev,
 .button_next {
@@ -399,7 +384,6 @@ input.form-control {
     font-weight: 400;
     font-size: 9px;
     color: #bdbdbd;
-
 }
 
 .text_by_site {
@@ -407,12 +391,9 @@ input.form-control {
     font-size: 9px;
     color: #bdbdbd;
     text-decoration: underline;
-
 }
 
 @media screen and (min-width: 768px) {
-
-
     .banner {
         display: grid;
         grid-template-columns: 1.3fr 1fr;
@@ -453,7 +434,6 @@ input.form-control {
         margin-bottom: 0;
     }
 
-
     .img_icon {
         width: 100px;
     }
@@ -482,8 +462,6 @@ input.form-control {
         height: 442px;
     }
 
-
-
     .diagram_one {
         border-radius: 4px;
         width: 152px;
@@ -493,7 +471,6 @@ input.form-control {
         box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.08);
         background: #fff;
         transform: rotate(-7deg);
-
     }
 
     .diagram_two {
@@ -504,7 +481,6 @@ input.form-control {
         left: -5%;
         box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.08);
         transform: rotate(-7deg);
-  
     }
 
     .diagram_three {
@@ -515,9 +491,7 @@ input.form-control {
         left: 63%;
         transform: rotate(13deg);
         box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.08);
-  
     }
-
 
     .slider_card {
         width: 301px;
@@ -547,9 +521,8 @@ input.form-control {
     .text_by {
         font-size: 12px;
     }
-    .text_by_site{
+
+    .text_by_site {
         font-size: 12px;
     }
-
-
 }
