@@ -56,6 +56,7 @@ main {
     background-color: #e2f2ff;
     border-radius: 10px;
     padding: 20px 10px;
+
 }
 
 .text_title {
@@ -321,6 +322,8 @@ main {
 
 /* modal */
 
+
+
 .title_modal {
     font-weight: 400;
     font-size: 18px;
@@ -366,6 +369,7 @@ input.form-control {
     font-weight: 400;
     font-size: 9px;
     color: #909090;
+    text-align: center;
 }
 
 .btns_light {
@@ -396,10 +400,11 @@ input.form-control {
 @media screen and (min-width: 768px) {
     .banner {
         display: grid;
-        grid-template-columns: 1.3fr 1fr;
+        grid-template-columns: 1.5fr 1fr;
         grid-gap: 15px;
         align-items: center;
         padding-left: 50px;
+        
     }
 
     .text_title {
@@ -526,3 +531,4 @@ input.form-control {
         font-size: 12px;
     }
 }
+
