@@ -44,6 +44,18 @@
     cursor: pointer;
 }
 
+.btns_light {
+    background-color: #aed1ff;
+    ;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 6px 24px;
+    border: none;
+    cursor: pointer;
+}
+
 
 
 main {
@@ -118,8 +130,8 @@ main {
 }
 
 .block_icons_item .img_icon {
-    height: 100%;
-    max-height: 125px;
+    /* height: 100%;
+    max-height: 125px; */
     display: flex;
     align-items: center;
 }
@@ -168,14 +180,16 @@ main {
 .img {
     display: block;
     margin: 0 auto;
-
     border-radius: 19px;
-    width: 370px;
-    height: 442px;
+    width: 230px;
+    height: 275px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 
 }
-
+.diagram {
+    opacity: 0; 
+    transition: opacity 1s ease-in-out; 
+  }
 
 .diagram_one {
     position: absolute;
@@ -183,6 +197,7 @@ main {
     left: 7%;
     width: 35%;
     transform: rotate(-7deg);
+    animation: fadeIn 1s forwards;
 }
 
 .diagram_two {
@@ -194,6 +209,7 @@ main {
     border-radius: 6px;
     width: 117px;
     height: 93px;
+    animation: fadeIn 1s 0.5s forwards;
 }
 
 .diagram_three {
@@ -201,9 +217,14 @@ main {
     top: 9%;
     left: 59%;
     width: 35%;
+    animation: fadeIn 1s 1s forwards;
 }
 
-
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
 
 
 
@@ -219,13 +240,18 @@ main {
 
 .text_title_slider {
     font-weight: 400;
-    font-size: 36px;
+    font-size: 20px;
     color: #909090;
     margin-top: 0;
 }
 
 .text_title_slider_span {
     color: #001e41;
+}
+
+.block_arrow {
+    display: none;
+
 }
 
 .box-card {
@@ -316,16 +342,15 @@ main {
 .btn_boost {
     width: 260px;
     height: 40px;
+
 }
 
 
 .text_end {
     font-weight: 400;
-
     line-height: 130%;
     letter-spacing: 0em;
     color: #001e41;
-
     font-size: 12px;
     text-align: center;
 
@@ -340,6 +365,8 @@ main {
     letter-spacing: 0.02em;
     text-align: center;
     color: #001e41;
+    margin: 0 60px;
+    padding-bottom: 10px;
 }
 
 .text_modal {
@@ -383,9 +410,13 @@ input.form-control {
     font-weight: 400;
     font-size: 9px;
     color: #bdbdbd;
+
 }
 
 .text_by_site {
+    font-weight: 400;
+    font-size: 9px;
+    color: #bdbdbd;
     text-decoration: underline;
     text-decoration-skip-ink: none;
 }
@@ -440,21 +471,45 @@ input.form-control {
 
     .block_icons {
         display: flex;
-        flex-wrap: wrap;
         justify-content: flex-start;
         align-items: stretch;
         margin-bottom: 0;
     }
 
+
+    .img_icon {
+        width: 100px;
+    }
+
+    .text_title_slider {
+
+        font-size: 36px;
+        line-height: 120%;
+    }
+
+    .text_title_slider_span {
+        color: #001e41;
+    }
+
+    .block_arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .block_img {
-        padding: 0 55px;
+        padding: 10px 30px;
 
 
     }
 
     .img {
-        max-width: 100%;
+        width: 370px;
+        height: 442px;
+
     }
+
+
 
     .diagram_one {
         border-radius: 4px;
@@ -465,46 +520,36 @@ input.form-control {
         box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.08);
         background: #fff;
         transform: rotate(-7deg);
+
     }
-
-
 
     .diagram_two {
         border-radius: 9px;
         width: 190px;
         height: 150px;
         top: -3%;
-        left: 5%;
+        left: -5%;
         box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.08);
         transform: rotate(-7deg);
+  
     }
-
-    
 
     .diagram_three {
         border-radius: 2px;
         width: 155px;
         height: 80px;
         top: 5%;
-        left: 62%;
+        left: 59%;
         transform: rotate(13deg);
         box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.08);
+  
     }
-
-
 
 
     .slider_card {
-        width: 302px;
+        width: 301px;
         height: 372px;
         border: 1px solid #ddd;
-        padding: 20px;
-    }
-
-    .data {
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     .text_end {
@@ -514,13 +559,9 @@ input.form-control {
         font-size: 14px;
     }
 
-
-
-
     .label_text {
         font-size: 14px;
     }
-
 
     input.form-control {
         font-size: 16px;
@@ -529,7 +570,6 @@ input.form-control {
     .text_check {
         font-size: 12px;
     }
-
 
     .text_by {
         font-size: 12px;

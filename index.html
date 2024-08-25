@@ -26,7 +26,7 @@
     <header>
       <nav class="navbar navbar-expand-lg header_nav fixed-top bg-white">
         <div
-          class="container d-flex align-items-center justify-content-between bg-white"
+          class="container d-flex align-items-center justify-content-between bg-white fixed-top mt-3"
         >
           <a class="navbar-brand" href="./index.html">
             <img src="./img/Logo.png" alt="Logo Plerdy" />
@@ -50,7 +50,7 @@
               <a class="nav-link" href="#">Use Cases</a>
               <a class="nav-link" href="#">Book a Demo</a>
             </div>
-            <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center mb-3">
               <button type="button" class="me-4 btn_sign">Sign In</button>
               <button
                 type="button"
@@ -98,7 +98,7 @@
               <p class="text_title_content_s">
                 Trusted by some of the world's largest enterprises
               </p>
-              <div class="block_icons gap-2">
+              <div class="block_icons ">
                 <span class="block_icons_item col_1"
                   ><img
                     src="./img/softserve.png"
@@ -133,10 +133,10 @@
               <img
                 src="./img/diagram_1.png"
                 alt=""
-                class="diagram_one"
+                class="diagram diagram_one"
               />
-              <img src="./img/diagram_2.png" alt="" class="diagram_two" />
-              <img src="./img/diagram_3.png" alt="" class="diagram_three " />
+              <img src="./img/diagram_2.png" alt="" class="diagram diagram_two" />
+              <img src="./img/diagram_3.png" alt="" class="diagram diagram_three " />
             </div>
           </div>
         </div>
@@ -152,10 +152,10 @@
               </h2>
             </div>
 
-            <div class="d-flex justify-content-center align-items-center">
+            <div class="block_arrow">
               <div class="button_next">
                 <img
-                  src="./img/vector.svg"
+                  src="./img/left.svg"
                   alt="Next"
                   class="vector"
                   aria-label="Next"
@@ -163,7 +163,7 @@
               </div>
               <div class="button_prev">
                 <img
-                  src="./img/vector-right.svg"
+                  src="./img/right.svg"
                   alt="Previous"
                   class="vector"
                   aria-label="Previous"
@@ -259,21 +259,23 @@
               </div>
             </div>
           </div>
-          <div class="mt-4 mb-5 data">
+          <div class=" mt-4 mb-5 d-flex flex-column flex-md-row align-items-center justify-content-center">
             <button
               type="button"
-              class="btns btn_boost"
+              class="btns btn_boost mb-3 mb-md-0 me-md-3"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
             >
               Boost my website conversion
             </button>
-            <p class="text_end ms-3">
+            <p class="text_end text-center text-md-start">
               So, it’s high time for you to stop losing 99% of potential clients
               due to being unaware of your website users’ behavior patterns and
               needs.
             </p>
           </div>
+          
+          
         </div>
       </section>
 
@@ -299,9 +301,9 @@
                   <label for="validationCustom01" class="form-label label_text">Lable</label>
                   <div class="input-group mb-3 border rounded">
                     
-                    <button class="btn btn-light dropdown-toggle d-flex align-items-center cpi-drop text_value" type="button"
+                    <button class="btn btn-light dropdown-toggle d-flex align-items-center cpi-drop text_value p-1" type="button"
                             data-bs-toggle="dropdown" aria-expanded="false" >
-                      <img src="./img/ua.png" alt="Україна" class="icon_mod">
+                      <img src="./img/ua.png" alt="Україна" class="icon_mod me-1">
                       <span class="me-1">+380</span>
                     </button>
                     <div class="dropdown-menu w-100">
@@ -336,13 +338,14 @@
                   </div>
                 </div>
                 <div class="modal-footer d-flex justify-content-center">
-                  <button type="submit" class="btns btn-secondary">Support</button>
+                  <button type="submit" class="btns_light btn-secondary">Support</button>
                   <button type="submit" class="btns btn-primary">Contact sales</button>
                 </div>
               </form>
               <div class="d-flex justify-content-center align-items-center">
-                <img src="./img/mini.png" alt="" />
-                <p class="text_by">Powered by <a href="http://www.plerdy.com" class="text_by_site">Plerdy</a></p>
+                <img src="./img/mini.png" alt="logo_mini" class="d-flex align-items-center pe-1"/>
+                <span><span class="text_by">Powered by </span> <a href="https://www.plerdy.com" class="text_by_site">Plerdy</a></span>
+                
               </div>
             </div>
           </div>
