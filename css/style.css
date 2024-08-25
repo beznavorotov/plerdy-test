@@ -43,21 +43,9 @@
     border: none;
     cursor: pointer;
 }
-
-.btns_light {
-    background-color: #aed1ff;
-    ;
-    color: white;
-    font-weight: 400;
-    font-size: 18px;
-    border-radius: 8px;
-    padding: 6px 24px;
-    border: none;
-    cursor: pointer;
+body{
+    font-family: "Roboto", sans-serif;
 }
-
-
-
 main {
     padding-top: 77px;
 }
@@ -126,15 +114,12 @@ main {
 .block_icons_item {
     margin-right: 24px;
     margin-bottom: 15px;
-
-}
-
-.block_icons_item .img_icon {
-    /* height: 100%;
-    max-height: 125px; */
+    height: 28px;
     display: flex;
     align-items: center;
 }
+
+
 
 .col_1 {
     display: grid;
@@ -147,7 +132,6 @@ main {
     display: grid;
     grid-column-start: 3;
     grid-column-end: 5;
-
 }
 
 .col_3 {
@@ -160,22 +144,19 @@ main {
     display: grid;
     grid-column-start: 2;
     grid-column-end: 4;
-
 }
 
 .col_5 {
     display: grid;
     grid-column-start: 4;
     grid-column-end: 7;
-    margin: 0;
-
-}
+    }
 
 .block_img {
     position: relative;
     padding: 0px;
-}
-
+    
+    }
 
 .img {
     display: block;
@@ -184,39 +165,42 @@ main {
     width: 230px;
     height: 275px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-
 }
 .diagram {
     opacity: 0; 
-    transition: opacity 1s ease-in-out; 
+    transition: opacity 1s ease-in-out;
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.12);
+background: rgba(241, 247, 255, 0.9); 
   }
 
 .diagram_one {
     position: absolute;
-    top: 81%;
-    left: 7%;
-    width: 35%;
+    top: 70%;
+    left: 12%;
+    width: 102px;
+    height: 55px;
     transform: rotate(-7deg);
     animation: fadeIn 1s forwards;
 }
 
 .diagram_two {
     position: absolute;
-    top: -8%;
+    top: -2%;
     left: 11%;
-    width: 35%;
-    transform: rotate(2deg);
+    transform: rotate(-5deg);
     border-radius: 6px;
-    width: 117px;
-    height: 93px;
+    width: 107px;
+    height: 82px;
     animation: fadeIn 1s 0.5s forwards;
 }
 
 .diagram_three {
     position: absolute;
-    top: 9%;
-    left: 59%;
-    width: 35%;
+    top: 17%;
+    left: 65%;
+    width: 96px;
+    height: 50px;
+    transform: rotate(7deg);
     animation: fadeIn 1s 1s forwards;
 }
 
@@ -227,15 +211,13 @@ main {
   }
 
 
-
-
-
 /* <!-- slider --> */
 
 .block_slider {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
+    margin-right: 5pxg;
 }
 
 .text_title_slider {
@@ -336,15 +318,12 @@ main {
 .data {
     display: flex;
     flex-direction: column;
-
 }
 
 .btn_boost {
     width: 260px;
     height: 40px;
-
 }
-
 
 .text_end {
     font-weight: 400;
@@ -353,7 +332,6 @@ main {
     color: #001e41;
     font-size: 12px;
     text-align: center;
-
 }
 
 /* modal */
@@ -405,6 +383,17 @@ input.form-control {
     color: #909090;
 }
 
+.btns_light {
+    background-color: #aed1ff;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 6px 24px;
+    border: none;
+    cursor: pointer;
+}
+
 
 .text_by {
     font-weight: 400;
@@ -418,19 +407,8 @@ input.form-control {
     font-size: 9px;
     color: #bdbdbd;
     text-decoration: underline;
-    text-decoration-skip-ink: none;
+
 }
-
-
-
-
-
-
-
-
-
-
-
 
 @media screen and (min-width: 768px) {
 
@@ -441,7 +419,6 @@ input.form-control {
         grid-gap: 15px;
         align-items: center;
         padding-left: 50px;
-
     }
 
     .text_title {
@@ -482,7 +459,6 @@ input.form-control {
     }
 
     .text_title_slider {
-
         font-size: 36px;
         line-height: 120%;
     }
@@ -499,14 +475,11 @@ input.form-control {
 
     .block_img {
         padding: 10px 30px;
-
-
     }
 
     .img {
         width: 370px;
         height: 442px;
-
     }
 
 
@@ -515,8 +488,8 @@ input.form-control {
         border-radius: 4px;
         width: 152px;
         height: 77px;
-        top: 260px;
-        left: -25px;
+        top: 270px;
+        left: -45px;
         box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.08);
         background: #fff;
         transform: rotate(-7deg);
@@ -525,8 +498,8 @@ input.form-control {
 
     .diagram_two {
         border-radius: 9px;
-        width: 190px;
-        height: 150px;
+        width: 173px;
+        height: 132px;
         top: -3%;
         left: -5%;
         box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.08);
@@ -538,8 +511,8 @@ input.form-control {
         border-radius: 2px;
         width: 155px;
         height: 80px;
-        top: 5%;
-        left: 59%;
+        top: 20%;
+        left: 63%;
         transform: rotate(13deg);
         box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.08);
   
@@ -572,6 +545,9 @@ input.form-control {
     }
 
     .text_by {
+        font-size: 12px;
+    }
+    .text_by_site{
         font-size: 12px;
     }
 
